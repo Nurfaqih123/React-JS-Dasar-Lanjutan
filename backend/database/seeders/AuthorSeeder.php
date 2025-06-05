@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class AuthorSeeder extends Seeder
 {
-    public function run()
+    public function run(): void
     {
         DB::table('authors')->insert([
             ['name' => 'Nasa Zakiyyan', 'email' => 'zakiyyan@gmail.com', 'created_at' => now(), 'updated_at' => now()],
